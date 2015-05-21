@@ -2,7 +2,9 @@
 
 This is a central repository containing best practices for HTML, CSS, WordPress and more for use at [Happy Medium](https://itshappymedium.com).
 
-- [CSS](https://github.com/itsahappymedium/best-practices/blob/master/README.md)
+## Table of Contents
+
+[CSS](https://github.com/itsahappymedium/best-practices/blob/master/css.md)
 
 ## Contributions
 
