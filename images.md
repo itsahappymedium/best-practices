@@ -56,4 +56,9 @@ $ mogrify -format png logo.jpg
 # Conversion: Batch
 # Usage: mogrify -format [new image type] *.[file type]
 $ mogrify -format jpg *.png
+
+# Conversion: Change the color of single color images (i.e. icons)
+# Usage: convert [filename] -fill "[hex color]" -colorize 100%  [filename]
+# Usage: for i in *.[filetype]; do convert $i -fill "[hex color]" -colorize 100%  $i; done
+$ for i in *.png; do convert $i -fill "#555555" -colorize 100%  $i; done
 ```
