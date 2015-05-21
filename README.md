@@ -3,11 +3,10 @@
 This is a central repository containing best practices for HTML, CSS, WordPress and more for use at [Happy Medium](https://itshappymedium.com).
 
 ## Table of Contents
-
-[CSS](https://github.com/itsahappymedium/best-practices/blob/master/css.md)
-[Images](https://github.com/itsahappymedium/best-practices/blob/master/images.md)
-[Pattern Lab](https://github.com/itsahappymedium/best-practices/blob/master/pattern-lab.md)
-[WordPress](https://github.com/itsahappymedium/best-practices/blob/master/wordpress.md)
+- [CSS](./css.md)
+- [Images](./images.md)
+- [Pattern Lab](./pattern-lab.md)
+- [WordPress](./wordpress.md)
 
 ## Contributions
 
