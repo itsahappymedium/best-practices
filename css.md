@@ -1,7 +1,4 @@
-# Best Practices
-
-## CSS
-===============
+# Best Practices: CSS
 
 Welcome to Happy Medium's internal CSS style guide. We use this for any project involving websites at Happy Medium. You should have a general idea of **specificity** and the [SCSS syntax](http://sass-lang.com/).
 
@@ -18,13 +15,13 @@ This style guide is modeled off of [Github's CSS Styleguide](https://github.com/
 
 Here is good example syntax:
 
-```
-	// This is a good example!
-	.styleguide-format {
-		border: 1px solid #0f0;
-		color: #000;
-		background: rgba(0,0,0,0.5);
-	}
+```css
+/* This is a good example! */
+.styleguide-format {
+	border: 1px solid #0f0;
+	color: #000;
+	background: rgba(0,0,0,0.5);
+}
 ```
 
 ## SCSS Style
@@ -110,7 +107,7 @@ Try to follow the [BEM Methodology](http://csswizardry.com/2013/01/mindbemding-g
 
 * When building out a block, use the BEM selectors to separate different components. Here is an example:
 
-    ```
+    ```html
 	<div class="block block--event">
 		<div class="block__thumb">
 			<img src="http://..." alt="Thumbnail" />
@@ -130,46 +127,46 @@ Try to follow the [BEM Methodology](http://csswizardry.com/2013/01/mindbemding-g
 
 In general, try to separate style from layout. This allows for modular reuse of styles throughout your site while keeping layout independent. Remember: it's easier to add or remove a class from an HTML element than refactor all of your CSS!
 
-    ```html
-	<!-- bad example -->
-	<div class="two-columns--featured">
-		<div class="col"></div>
-		<div class="col"></div>
-	</div>
+```html
+<!-- bad example -->
+<div class="two-columns--featured">
+	<div class="col"></div>
+	<div class="col"></div>
+</div>
 
-    <style type="text/css">
-	.two-columns--featured {
-		background: #efefef;
-		font-size: 1.2em;
+<style type="text/css">
+.two-columns--featured {
+	background: #efefef;
+	font-size: 1.2em;
 
-		> .col {
-			width: 48%;
-			float: left;
-			margin: 0 2%;
-		}
+	> .col {
+		width: 48%;
+		float: left;
+		margin: 0 2%;
 	}
-	</style>
+}
+</style>
 
-	<!-- good example -->
-	<div class="two-columns section--featured">
-		<div class="col"></div>
-		<div class="col"></div>
-	</div>
+<!-- good example -->
+<div class="two-columns section--featured">
+	<div class="col"></div>
+	<div class="col"></div>
+</div>
 
-    <style type="text/css">
-	.two-columns {
-		> .col {
-			width: 48%;
-			float: left;
-			margin: 0 2%;
-		}
+<style type="text/css">
+.two-columns {
+	> .col {
+		width: 48%;
+		float: left;
+		margin: 0 2%;
 	}
+}
 
-	.section--featured {
-		background: #efefef;
-		font-size: 1.2em;
-	}
-	</style>
-	```
+.section--featured {
+	background: #efefef;
+	font-size: 1.2em;
+}
+</style>
+```
 
 Remember: End users don't care how your CSS looks, as long as the website looks OK. Think about other _developers_ when you are building and documenting your stylesheets!
