@@ -4,7 +4,7 @@
 ## Editor Styles
 ## Using Advanced Custom Fields
 ## Linking to Pages and Forms in Templates
-Try to avoid linking to specific pages, posts, or forms from your template file. While using Post IDs inside templates will often work just fine, we need to make sure our templates are portable from site to site.
+Try to avoid linking to specific pages, posts, or forms from your template file. While using Post IDs inside templates would normally work fine, we should make our templates flexible.
 
 __Rule of Thumb__: Build your templates assuming the database could get wiped out at any time or that the rows in the database could get jumbled.
 
