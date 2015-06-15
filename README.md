@@ -6,6 +6,7 @@ This is a central repository containing best practices for HTML, CSS, WordPress 
 - [CSS](./css.md)
 - [Images](./images.md)
 - [Pattern Lab](./pattern-lab.md)
+- [PHP](./php.md)
 - [SEO](./seo.md)
 - [WordPress](./wordpress.md)
 
