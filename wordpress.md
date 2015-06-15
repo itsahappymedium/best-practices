@@ -18,16 +18,14 @@ __Note__: By default, Gravity Forms are hidden from the Advanced Custom Fields P
 __INCORRECT__:
 
 ```php
-<?php gravity_form(1, false, false, false, null, true, 99); ?>
+gravity_form(1, false, false, false, null, true, 99);
 ```
 
 __CORRECT__:
 
 ```php
-<?php
 $chosen_gravity_form = (int) get_field('contact_form', 'options');
 gravity_form($chosen_gravity_form, false, false, false, null, true, 99); ?>
-?>
 ```
 
 #### Example: Getting Child Pages
@@ -35,24 +33,20 @@ gravity_form($chosen_gravity_form, false, false, false, null, true, 99); ?>
 __INCORRECT__:
 
 ```php
-<?php
 function hm_get_team_members() {
     $team_members = hm_get_child_pages(96);
 
     return $team_members;
 }
-?>
 ```
 
 __CORRECT__:
 
 ```php
-<?php
 function hm_get_team_members() {
     $team_members_page = get_field('team_members_page', 'options');
     $team_members = hm_get_child_pages( $team_members_page->ID );
 
     return $team_members;
 }
-?>
 ```
