@@ -27,7 +27,7 @@ Example usage (folder has a bunch of JPGs):
 
 ```sh
 # Replace all JPGs in folder in a max image width or height of 1500px
-$ sips -z 1500 *.JPG
+$ sips -Z 1500 *.JPG
 ```
 
 
