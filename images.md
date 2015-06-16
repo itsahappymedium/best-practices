@@ -64,4 +64,8 @@ $ mogrify -format jpg *.png
 # Usage: convert [filename] -fill "[hex color]" -colorize 100%  [filename]
 # Usage: for i in *.[filetype]; do convert $i -fill "[hex color]" -colorize 100%  $i; done
 $ for i in *.png; do convert $i -fill "#555555" -colorize 100%  $i; done
+
+# Rotation: Batch rotate images if the width exceeds the height
+# Usage: rotate "[degrees]>|<" [filename]
+$ mogrify -rotate "-90>" *.jpg
 ```
