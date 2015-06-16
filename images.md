@@ -37,6 +37,14 @@ $ find . -type f -name '*.jpg' -exec sips -Z 1500 {} \;
 ### [Mogrify](http://www.imagemagick.org/script/mogrify.php)
 This is a command line tool which lets you do pretty much anything to an image.
 
+Mogrify is part of [ImageMagick](http://www.imagemagick.org). Install it with Homebrew:
+
+```sh
+$ brew update && brew install ImageMagick
+```
+
+#### Examples
+
 ```sh
 # Resize: Retain Aspect Ratio
 # Usage: mogrify -resize [largest dimension] [filename]
