@@ -49,6 +49,12 @@ $ mogrify -crop 250x250+0+0 +repage *.jpg
 # Usage: mogrify -resize [max width]x[max height] *.[file type]
 $ mogrify -resize 1920x1200 *.jpg
 
+# Resize: Batch (including subfolders)
+# Usage: find . -name '[filename]' -execdir [command to run] {} \;
+$ find . -name '*.jpg' -execdir mogrify -resize 1200 *.jpg {} \;
+# Any file that includes the string `small`
+$ find . -name '*small*' -execdir mogrify -resize 150 *small* {} \;
+
 # Conversion: Single
 # Usage: mogrify -format [new image type] [filename]
 $ mogrify -format png logo.jpg
