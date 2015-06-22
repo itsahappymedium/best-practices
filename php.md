@@ -2,6 +2,34 @@
 
 ## Brackets
 ## Quotes
+Use single quotes to denote strings unless the string contains characters that would need to be escaped.
+
+### Example
+
+__INCORRECT__:
+
+```php
+$foo = "bar";
+```
+
+__CORRECT__:
+
+```php
+$foo = 'bar';
+```
+
+__INCORRECT__:
+
+```php
+$foo = 'I don\'t like that it\'s raining';
+```
+
+__CORRECT__:
+
+```php
+$foo = "I don't like that it's raining";
+```
+
 ## Spacing
 Keep your PHP code readable to _humans_ (i.e. the rest of us). The great thing about PHP is that you can put space between blocks and chunk related lines together to make it easier to decipher.
 
