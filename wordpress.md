@@ -22,6 +22,17 @@ Luckily, WordPress provides an `.admin-bar` utility class on the `<body>` elemen
 
 __Note__: Avoid attaching the position of the fixed header to whether the WordPress user is logged in. Remember, only certain WordPress users get an admin bar.
 
+
+### Sass Mixin
+
+In the latest Pattern Lab, there's a `nudge-admin-bar` mixin to produce the above CSS.
+
+```scss
+.header {
+    @include nudge-admin-bar;
+}
+```
+
 ## Editor Styles
 ## Using Advanced Custom Fields
 ## Linking to Pages and Forms in Templates
