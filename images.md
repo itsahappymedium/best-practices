@@ -26,11 +26,14 @@ This is a command line tool on Mac which lets you batch crop and resize images.
 Example usage (folder has a bunch of JPGs):
 
 ```sh
-# Replace all JPGs in folder with a max image width or height of 1500px
+# Resize all JPGs in folder with a max image width or height of 1500px
 $ sips -Z 1500 *.jpg
 
-# Replace all JPGs in folder (recursively) with a max image width or height of 1500px 
+# Resize all JPGs in a folder (recursively)
 $ find . -type f -name '*.jpg' -exec sips -Z 1500 {} \;
+
+# Resize all JPGs in a folder (recursively) that are larger that 512kb
+find . -type f -size +512k -name '*.jpg' -exec sips -Z 1500 {} \;
 ```
 
 
