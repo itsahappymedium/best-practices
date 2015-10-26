@@ -1,6 +1,38 @@
 # Best Practices: WordPress
 
 ## General Theme Setup
+
+### Dealing with the Admin Bar
+
+When a WordPress user is logged in as an administrator, manager or editor, they'll get the WordPress admin bar which is fixed at the top of the screen.
+
+This is fine, but it will often interfere with a fixed header.
+
+Luckily, WordPress provides an `.admin-bar` utility class on the `<body>` element when this is active. We can use the utility class to push the fixed header below the admin bar using CSS:
+
+```css
+.admin-bar & {
+    top: 48px;
+
+    @media (min-width: 48em) {
+        top: 32px;
+    }
+}
+```
+
+__Note__: Avoid attaching the position of the fixed header to whether the WordPress user is logged in. Remember, only certain WordPress users get an admin bar.
+
+
+### Sass Mixin
+
+In the latest Pattern Lab, there's a `nudge-admin-bar` mixin to produce the above CSS.
+
+```scss
+.header {
+    @include nudge-admin-bar;
+}
+```
+
 ## Editor Styles
 ## Using Advanced Custom Fields
 ## Linking to Pages and Forms in Templates
