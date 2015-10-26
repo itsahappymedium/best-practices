@@ -33,7 +33,7 @@ $ sips -Z 1500 *.jpg
 $ find . -type f -name '*.jpg' -exec sips -Z 1500 {} \;
 
 # Resize all JPGs in a folder (recursively) that are larger that 512kb
-find . -type f -size +512k -name '*.jpg' -exec sips -Z 1500 {} \;
+$ find . -type f -size +512k -name '*.jpg' -exec sips -Z 1500 {} \;
 ```
 
 
