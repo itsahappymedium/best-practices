@@ -15,8 +15,8 @@ This style guide is modeled off of [Github's CSS Styleguide](https://github.com/
 
 Here is good example syntax:
 
-```css
-/* This is a good example! */
+```scss
+// This is a good example!
 .styleguide-format {
 	border: 1px solid #0f0;
 	color: #000;
